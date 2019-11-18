@@ -1,0 +1,15 @@
+dobro jutro.
+
+rekoh ti u cetvrtak da cu da javim sta sam radio u vezi ovog problema sa kalkulacijama danasa.
+
+u petak sam proveravao log4net rad sa mulitithreadingom i moguce razloge za nedostatak prikazivanja logova.
+saljem linkove koje  smatram relevantim i zbog kojih sam prvo logging proveravao, inace pise da je log4net threadsafe:
+https://logging.apache.org/log4net/release/faq.html  (ovde je dat izmedju ostalog  razlog kada se ne desavaju logovi zbog loseg podesavanja IIS, kada je log file prazan itd...)
+http://apache-logging.6191.n7.nabble.com/All-threads-blocked-while-logging-td52665.html (log4net blocking threads)
+https://stackoverflow.com/questions/1519211/multithread-safe-logging (primer gde je prijavljeno da se neki logovi ne prikazuju zbog fileappendera)
+http://technico.qnownow.com/asynchronous-logging-to-a-file-using-log4net-c/ (ovo je prikazano kako treba da se radi logging i razlikuje se od naseg nacina, ( mislim na upotrebu appendera, btw razlikuju se i zbog toga sto se njihov upisuje u xml a  nas u bazu al to ovde nije vazno))
+
+Nazalost nisam zavrsio sve sto sam nameravao da testiram i nemam konacan zakljucak. trebace mi jos dan dva, nastavljam u cetvrtak, kad se vratim sa NEO predavanja ako ne nadjete resenje do tada ofkors.
+Dobijao sam i neke exceptione ali mislim da nisu relavantni za ovaj problem kalkulacija vec da su vezani za neke permisije na  mom racunaru.
+
+Have an awesome day :)
